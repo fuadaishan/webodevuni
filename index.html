@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="assets\css/bootstrap.css">
+        
+        <link rel="stylesheet" href="assets\css/bootstrap-grid.css">
+        <link rel="stylesheet" href="assets/css/inter-ui.css">
+        <link rel="stylesheet" href="assets/css/wowanimate.css">
+		<link rel="stylesheet" href="assets/animatescroll/animatescroll.js">
+		<link rel="stylesheet" href="assets/animatescroll/animatescroll.min.js">
+		<link rel="stylesheet" href="assets/animatescroll/jquery-1.8.3.min.js">
+        
+        <title>Fuad</title>
+        
+		
+		<style>
+			table {
+			  font-family: arial, sans-serif;
+			  border-collapse: collapse;
+			  width: 100%;
+			}
+
+			td, th {
+			  border: 1px solid #dddddd;
+			  text-align: left;
+			  padding: 8px;
+			}
+
+			tr:nth-child(even) {
+			  background-color: #dddddd;
+			}
+		</style>
+		
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$("#top").click(function () {
+					// Sayfamızı kaydıracak olan kod burasıdır.
+					$("html,body").stop().animate({ scrollTop: "0" }, 1000);
+				});
+			});
+			$(window).scroll(function () {
+				var uzunluk = $(document).scrollTop();
+				if (uzunluk > 300) $("#top").fadeIn(500);
+				else { $("#top").fadeOut(500); }
+			});
+		</script>
+		<style type="text/css">
+			#top {
+				bottom: 5px;
+				bottom: 20px;
+				display: none;
+				height: 100px;
+				position: fixed;
+				right: 20px;
+			}
+		</style>
+             
+        
+    </head>
+    
+    <body>
+ 
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3e284f; max-height: 90px" >
+            <nav class="navbar navbar-expand-lg navbar-dark "  style="margin-left: 470px">
+                <a class="navbar-brand" style="font-style: italic; color: #7a6986; font-size: 20px" href="index.html"><strong>Hakkında</strong></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="sehrimiz.html"><strong><span style="color: white; font-size: 20px">Şehrim</span></strong></a>
+						<a class="nav-item nav-link active" href="mirasımız.html"><strong><span style="color: white; font-size: 20px">Mirasımız</span></strong></a>
+                        <a class="nav-item nav-link active" href="takımımız.html"><strong><span style="color: white; font-size: 20px">Takımımız</span></strong></a>
+                        <a class="nav-item nav-link active" href="iletisim.html"><strong><span style="color: white; font-size: 20px">İletişim</span></strong></a>
+                    </div>
+                </div>
+            </nav>    
+
+<div style="margin-right: 60px">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Giriş Yap</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Bilgileri Giriniz</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form name="kayit" id="kayit" method="GET">
+                                <div class="form-group row">
+                                    <label id="inputTextToSave" for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label id="inputTextToSave" for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-10">
+                                        <button onclick="savefile()" type="submit" class="btn btn-primary">Sign in</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+			
+       </nav>
+      
+        <div class="container mt-5">
+			<div class="text-justify">
+				<div class="row wow rotateInDownLeft">
+					
+					<div class="col align-self-center">
+						
+						<table>
+							<tr>
+								<th>ÖZGEÇMİŞ</th>
+							</tr>
+							<tr>
+								<td>Adı soyadı : Fuad Aishan</td>
+							</tr>
+							<tr>
+								<td>Baba adı: Abdullah Aishan</td>
+							</tr>
+							<tr>
+								<td>Anne adı: Amine Aishan</td>
+							</tr>
+							
+							<tr>
+								<td>Doğum tarihi: 18.06.1997</td>
+							</tr>
+							<tr>
+								<td>Mezun olduğu lise: İmamali lisesi (yemen)</td>
+							</tr>
+							<tr>
+								<td>Okuduğu Üniveriste: Sakarya üniversitesi</td>
+							</tr>
+						</table>
+						
+						<p>
+						Ben Fuad Aishan<strong>1997</strong> yılında <strong>Haziran</strong> ayının 18. Gününde <strong>Yemen</strong>'da doğdum. Babam haciz memuru, annem ev hanımıdır. İki kız kardeşim var. (Normal de yemende yaşıyorum ama okul için sakaryaya geldim)Sakaryada de  yaşıyorum. Lise eğitimimi yemende imamali lisesinde tamamladım. Şuan Sakarya Üniveristesi bilgisayar mühendisliği bölümünü okumaktayım.
+						</p>
+					</div>
+				</div>
+				<div class="row wow rotateInDownRight">
+					<div class="col" style="margin-top: 25px">
+						<p>
+						   <strong>HAKKIMDA</strong>
+						</p>
+						<p>
+						   Hobilerimin en başında seyahat yapmak geliyor . Yeni yerler görmek kendimi iyi hissettiren şeyler arasında. Müzik dinlemek.. Müzik dinlemeye bayılırım.  Canım sıkkınken , üzgünken yada farketmez sevinçliyken  müzik dinlerim. Arkadaşlarımla vakit geçirmekte benim oldukça mutlu eden şeyler arasında .
+						</p>
+					</div>
+				</div>
+				
+				<div class="row wow fadeInDown">
+					<div class="col">
+						<p>
+						   
+						</p>
+						<p>
+						</p>
+					</div>
+				</div>
+			</div>
+        
+		</div>
+
+
+		<div class="container mt-5">
+            <div class="row">
+               <div class="col align-self-start; wow bounceInLeft">
+                    <img src="assets/ana.jpg" class="rounded float-left" alt="harita">
+                </div>
+                <div class="col align-self-center">
+                    <div class="wow bounceInRight">
+                        <h1 style="text-align: center">Sivas</h1>
+                            <p  style="text-align: center" >
+                                Sivas, İç Anadolu'nun en eski ve önemli kentlerinden biridir. İç Anadolu Bölgesi, Doğu Karadeniz Bölgesi ve Doğu Anadolu Bölgesinde ilçeleri ve kültür zenginliği, iklim farklılığı bulunan ve sahip olduğu değerleri ile önemli bir coğrafi konuma sahiptir. Kuzeyinde Ordu, kuzeybatısında Tokat doğusunda Erzincan, kuzeydoğusunda Giresun, batısında Yozgat, güneybatısında Kayseri, güneyinde Malatya ve Kahramanmaraş ile çevrilidir.
+                            </p>
+                        <div style="text-align: center">
+                            <a href="sehrimiz.html" class="badge badge-primary">Daha Fazla</a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+  
+            <div class="row">
+                <div class="col align-self-center">
+                    <div class="wow lightSpeedIn center">
+                        <h1 style="text-align: center">Kültürel Miras</h1>
+                        <p style="text-align: center">
+                            Sivas geniş toprakları nedeniyle geniş ve büyük bir kültüre sahiptir. Sivas ilinin genelinde Batı Anadolu Ağızları kullanılır. Karadeniz bölgesinde kalan ilçelerinde Karadeniz şivesi görülürken, merkez ile çevre ilçeler Tokat ve diğer illere daha yakındır. Doğu Karadeniz'deki ilçelerinde kısmen Karadeniz ağzı ve kültürü görülürken, İç Anadolu ilçelerinde bozkır ve Sivas yöresine özgü Sivas folklorü görülür. Yeşilırmak havzasında bulunan Karadeniz ilçeleri olan Suşehri, Akıncılar, Gölova, Koyulhisar bölgesi davul, zurna, horon, mikroklima iklim ve yayla bölgesidir.
+                        </p>
+                        <div style="text-align: center">
+                            <a href="mirasımız.html" class="badge badge-primary">Daha Fazla</a>
+                        </div>
+                    </div>        
+                </div>
+                <div class="col align-self-start; wow flipInX center">
+                    <img  src="assets/ana1.jpg" class="rounded float-right" alt="pizza">
+                </div>
+            </div>
+           
+            <div class="row "> 
+                  <div class="col wow rollIn">
+                     <img  src="assets/ana2.jpg" class="rounded float-left" alt="resim" >
+                  </div>
+                  <div class="col align-self-center">
+                      <div class="wow rollIn">
+                          <h1 style="text-align: center">Sivas Spor</h1>
+                            <p style="text-align: center">
+								Sivas... Tarihinin bütün duraklarında acı ve sevinci iç içe yaşamış bu koca kent makus talihini yenmek için yürüyor Süper Lig'e. Kentin tarihi ve talihi sayılıyor Sivasspor, sihirli değneği, umutlarının yeşerdiği yer, geleceği... Hatta o coğrafyada yaşayan insanların varoluş umudu dersek abartmış olmayız Sivasspor'u. Sivasspor'un o uzun ince yoldaki hikayesi aynı zamanda Sivas'ın bugününün de hikayesidir...
+                            </p>
+                        <div style="text-align: center">
+                            <a href="takımımız.html" class="badge badge-primary">Daha Fazla</a>
+                        </div>
+                      </div>                   
+                </div>                 
+            </div>
+
+            <div id="top">
+				Yukarı<br />
+				<img width="50" height="50" src="assets/yukari.png" />
+			</div>
+            
+        </div>
+
+
+		
+        <footer style="background-color: black; margin-top: 300px">
+            <div style="color: white; text-align: center">
+                <p>Posted by: Fuad</p>
+                <p>Contact information: <a href="mailto:someone@example.com">fuad@example.com</a></p>
+            </div>
+        </footer>
+    
+
+        	  
+			  
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        
+        
+        
+    </body>
+</html>
+

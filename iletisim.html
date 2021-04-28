@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="assets\css/bootstrap.css">
+        <link rel="stylesheet" href="assets\css/bootstrap-grid.css">
+        <link rel="stylesheet" href="assets\animate.css">
+        <link rel="stylesheet" href="assets/css/wowanimate.css">
+        <title>Fuad</title>
+		
+		
+		<style>
+			.form-style-4{
+			width: 450px;
+			font-size: 16px;
+			background: #495C70;
+			padding: 30px 30px 15px 30px;
+			border: 5px solid #53687E;
+			}
+			.form-style-4 input[type=submit],
+			.form-style-4 input[type=button],
+			.form-style-4 input[type=text],
+			.form-style-4 input[type=email],
+			.form-style-4 textarea,
+			.form-style-4 label
+			{
+			font-family: Georgia, "Times New Roman", Times, serif;
+			font-size: 16px;
+			color: #fff;
+			 
+			}
+			.form-style-4 label {
+			display:block;
+			margin-bottom: 10px;
+			}
+			.form-style-4 label > span{
+			display: inline-block;
+			float: left;
+			width: 150px;
+			}
+			.form-style-4 input[type=text],
+			.form-style-4 input[type=email] 
+			{
+			background: transparent;
+			border: none;
+			border-bottom: 1px dashed #83A4C5;
+			width: 275px;
+			outline: none;
+			padding: 0px 0px 0px 0px;
+			font-style: italic;
+			}
+			.form-style-4 textarea{
+			font-style: italic;
+			padding: 0px 0px 0px 0px;
+			background: transparent;
+			outline: none;
+			border: none;
+			border-bottom: 1px dashed #83A4C5;
+			width: 275px;
+			overflow: hidden;
+			resize:none;
+			height:20px;
+			}
+			 
+			.form-style-4 textarea:focus, 
+			.form-style-4 input[type=text]:focus,
+			.form-style-4 input[type=email]:focus,
+			.form-style-4 input[type=email] :focus
+			{
+			border-bottom: 1px dashed #D9FFA9;
+			}
+			 
+			.form-style-4 input[type=submit],
+			.form-style-4 input[type=button]{
+			background: #576E86;
+			border: none;
+			padding: 8px 10px 8px 10px;
+			border-radius: 5px;
+			color: #A8BACE;
+			}
+			.form-style-4 input[type=submit]:hover,
+			.form-style-4 input[type=button]:hover{
+			background: #394D61;
+			}
+		</style>
+
+		<script>
+
+			var artis=20;
+			function adjust_textarea(h) {
+			h.style.height = "20px";
+			h.style.height = (h.scrollHeight)+"px";
+			}
+		</script>
+		
+		
+		
+    </head>
+    
+    <body>
+         
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3e284f; max-height: 90px" >
+            
+    
+             <nav class="navbar navbar-expand-lg navbar-dark" style="margin-left: 470px">
+                <a class="navbar-brand" style="font-style: italic; font-size: 20px" href="index.html"><strong>Hakkında</strong></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="sehrimiz.html"><strong><span style="color: white; font-size: 20px">Şehrim</span></strong></a>
+						<a class="nav-item nav-link active" href="mirasımız.html"><strong><span style="color: white; font-size: 20px">Mirasımız</span></strong></a>
+                        <a class="nav-item nav-link active" href="takımımız.html"><strong><span style="color: white; font-size: 20px">Takımımız</span></strong></a>
+                        <a class="nav-item nav-link active" href="iletisim.html"><strong><span style="color: #7a6986; font-size: 20px">İletişim</span></strong></a>
+                    </div>
+                </div>
+            </nav>
+            
+         
+        </nav>
+        
+      
+	  <div class="container mt-5">
+		<form class="form-style-4" action="" method="post">
+			<label for="field1">
+			<span>Adınızı Girin</span><input type="text" name="field1" required="true" />
+			</label>
+			<label for="field2">
+			<span>E-Posta Adresi</span><input type="email" name="field2" required="true" />
+			</label>
+			<label for="field4">
+			<span>Mesajınız</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
+			</label>
+			<label>
+			<span>&nbsp;</span><input type="submit" value="Gönder" />
+			</label>
+			<button type="reset" value="Temizle">Temizle</button>
+		</form>
+	  </div>
+	  
+
+    
+        <footer style="background-color: black; margin-top: 300px">
+            <div style="color: white; text-align: center">
+                <p>Posted by: Fuad</p>
+                <p>Contact information: <a href="mailto:someone@example.com">fuad@example.com</a></p>
+            </div>
+        </footer>
+
+    
+        
+        </body>
+    </html>
